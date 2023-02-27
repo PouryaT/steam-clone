@@ -1,10 +1,43 @@
 <body style="width: 100%;">
-    <div fxLayout="column" fxLayoutAlign="center center" style="background-image: url(https://knowtechie.com/wp-content/uploads/2019/10/steam-library-header.jpg);height: 75%;max-width: 100%; background-repeat: no-repeat ;background-size:cover;background-position: center center;backdrop-filter: blur(2px);">
-        <div class="whiteT"  style="width: 600px; height: 300px; background-color: #171a21; border-radius: 5px;">
-            
-        </div>
-    </div>
-    <div style="width: 100%;height: 25%;background-color: #171a21;">
+    <div  class="signin" fxLayout="column" fxLayoutAlign="center center">
         
+            <span>
+                <h1 class="whiteHead">
+                    SIGN IN
+                </h1>
+            </span>
+            
+            <span class=""  style="width: 700px; height: 330px; background-color: #171a21; border-radius: 5px; ">
+    
+                <Form style="margin: 30px 30px;">
+                    <span fxLayout="column" fxLayoutGap="5px">
+                        <label>SIGN IN WITH ACCOUNT NAME</label>
+                        <input>
+                    </span>
+    
+                    <span fxLayout="column" fxLayoutGap="5px" style="margin-top: 20px;">
+                        <label class="greyT">PASSWORD</label>
+                        <input type="password" class="form-control">
+                    </span>
+    
+                    <span>
+                        <input type="checkbox" id="scales" name="scales" checked>
+                        <label class="greyT" for="scales">REMEMBER ME</label>
+                    </span>
+    
+                </Form>
+    
+            </span>
+        
+    </div>
+    <div style="width: 100%;height: 25%;background-color: #171a21;" fxLayoutAlign="center center">
+        <span class="greyT" style="width: 200px;text-align: center;">Join Steam and discover thousands of games to play
+            <a href="#" class="greyT nav-link" style="margin-top: 10px;">Learn More</a>
+        </span>
+        <img src="https://store.akamai.steamstatic.com/public/shared/images/login/join_pc.png?v=1" style="width: 200px;">
+        <span style="width: 200px;text-align: center;">
+            <button id="JoinButt" class="whiteT bg-transparent btn" style="width: 110px;margin-bottom: 30px;">Join Steam</button>
+            <p class="greyT" style="margin-bottom: 0;">It's free and easy to use</p>
+        </span>
     </div>
 </body>
