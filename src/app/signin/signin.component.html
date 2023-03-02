@@ -1,50 +1,57 @@
 <body>
-        <div class="signin" fxLayout="column" fxLayoutAlign="center center" style="height: 83%;">
-            <span>
+        <div class="signin" fxLayout="column" fxLayoutAlign="center center" style="height: 700px;">
+            <span fxlayout="row" fxLayoutAlign="start">
                 <h1 class="whiteHead">
                     SIGN IN
                 </h1>
             </span>
-            <span style="width: 700px; height: 400px; background-color: #171a21; border-radius: 5px;display: grid;grid-template-columns: 2fr 1fr;">
+            <span style="width: 700px; background-color: #171a21; border-radius: 5px;display: grid;grid-template-columns: 2fr 1fr;">
                 
                 <Form style="margin: 20px 30px;" fxLayout="column" fxLayoutAlign="center">
 
-                    <mat-form-field>
-                        <span fxLayout="column" fxLayoutGap="5px">
+                    
+                        <span class="input-G" fxLayout="column" fxLayoutGap="5px">
                             <label>SIGN IN WITH ACCOUNT NAME</label>
                             <input matInput>
                         </span>
-                    </mat-form-field>
-
-                    <mat-form-field>
-                        <span fxLayout="column" fxLayoutGap="5px">
+                    
+                        
+                    
+                    
+                        <span class="input-G" fxLayout="column" fxLayoutGap="5px">
                             <label  class="greyT">PASSWORD</label>
                             <input matInput type="password">
                         </span>
-                    </mat-form-field>
+                    
 
                     <mat-checkbox class="example-margin greyT" color="primary">
                         Remember me
                     </mat-checkbox>
-                    <span fxLayoutAlign="center center">
-                        <button class="signButt whiteT" style="font-weight: 600;font-size: 18px;">
+
+                    <span fxLayoutAlign="center center" style="margin-top: 10px;">
+                        <button class="signButt">
                             Sign in
                         </button>
                     </span>
+
+                    <!-- <mat-form-field></mat-form-field> -->
+
                     <span fxLayoutAlign="center center">
                         <a class="greyT">Help, I can't sign in</a>
                     </span>
                     
                 </Form>
                 
-                <section>
-
+                <section style="margin: 30px 30px;"fxLayout="column" fxLayoutAlign="center">
+                    <label>OR SIGN IN WITH QR CODE</label>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe5Vpa-2aVxvCrozFgzcnkNMKJY5VqTfbfDcFgOHg&s" style="border-radius: 5px;">
+                    <p class="greyT">Use the <span class="nav-link ">Steam Mobile App</span> to sign in via QR code</p>
                 </section>
             </span>
 
         </div>
 
-        <div style="width: 100%;background-color: #171a21;">
+        <div style="width: 100%;height: 184px ;background-color: #171a21;">
             <div fxLayout.lt-sm="column" style="width: 100%;" fxLayoutAlign="center center">
                 <span class="greyT" style="width: 200px;text-align: center;margin-top: 30px;">Join Steam and discover thousands of games to play
                     <a href="#" class="greyT nav-link" style="margin-top: 10px;">Learn More</a>
