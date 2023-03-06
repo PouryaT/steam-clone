@@ -1,44 +1,56 @@
-<div class="head-color" style="height: 104px;">
-    <mat-toolbar color="primary" style="height: 100%;" fxLayout="column" fxLayoutAlign="center">
-  
-          <mat-toolbar-row  class="navbar">
-         
-            <div class="container">
-              <span class="navbar">
-                <span class="nav-item" style="padding-right: 2em; margin-top: 0;">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor " class="bi bi-steam" viewBox="0 0 16 16 ">
-                    <path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.198 2.198 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.217 2.217 0 0 1-1.312-1.568L.33 10.333Z"/>
-                    <path d="M4.868 12.683a1.715 1.715 0 0 0 1.318-3.165 1.705 1.705 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027Zm2.03-1.527a1.524 1.524 0 1 1-.002 3.048 1.524 1.524 0 0 1 .002-3.048Z"/>
-                  </svg>
-                  
-                  STEAM
-                  
-                </span>
-                <a class="nav-item nav-link" href="#">STORE</a>
-                <a class="nav-item nav-link" href="#">COMMUNITY</a>
-                <a class="nav-item nav-link" href="#">ABOUT</a>
-                <a class="nav-item nav-link" href="#">SUPPORT</a>
-              </span>
+ <nav class="navbar navbar-dark Header">
+    <div class="container-lg">
 
-              <section>
-                <span class="navbar">
-                  <a  class="nav-item nav-link" href="#">
-                    install steam
-                  </a>
-                  <a class="nav-item nav-link" href="#">login</a>
-              
-                  <div class="dropdown">
-                    <a class="nav-link dropdown-toggle " href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">language</a>
-                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
-                      <li><a class="dropdown-item bg-transparent" href="#">Persian</a></li>
-                      <li><a class="dropdown-item bg-transparent" href="#">Chinese</a></li>
-                      <li><a class="dropdown-item bg-transparent" href="#">English</a></li>
-                   </ul>
-                  </div>
-                </span>
-              </section>
-                
-            </div>
-          </mat-toolbar-row>
-    </mat-toolbar>
-  </div>
+      <section  fxLayout="row" fxLayoutAlign="default center">
+        <mat-sidenav-container class="example-container bg-transparent hide-responsive-GT-md">
+          <mat-sidenav-content>
+            <p class="bg-transparent">
+              <button mat-button (click)="Clicked()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list pt-2" viewBox="0 0 16 16" style="color: #FFFFFF;">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </button>
+            </p>
+          </mat-sidenav-content>
+        </mat-sidenav-container>
+
+        <section fxLayoutAlign="center">
+          <a class="navbar-brand" href="#" fxLayoutAlign="center"><img src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_logo.png" style="height: 36px;" alt="PIC"></a>
+        </section>
+
+        <section class="hide-responsive-LT-md">
+          <span fxLayout="row">
+            <a class="nav-item nav-link b-link" href="#">STORE</a>
+          <a class="nav-link b-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">COMMUNITY</a>
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu" style="background-color: #171a21;border-radius: 0;box-shadow: 0 4px 8px 0 #171a21, 0 6px 20px 0 #171a21" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item bg-transparent link" href="#">Persian</a></li>
+            <li><a class="dropdown-item bg-transparent link" href="#">Chinese</a></li>
+            <li><a class="dropdown-item bg-transparent link" href="#">English</a></li>
+          </ul>
+          <a class="nav-item nav-link b-link" href="#">ABOUT</a>
+          <a class="nav-item nav-link b-link" href="#">SUPPORT</a>
+          </span>
+        </section>
+
+      </section>
+      <section class="hide-responsive-LT-md">
+        <span class="navbar" style="line-height: 2;">
+          <a  class="nav-item nav-link" style="background-color: #5c7e10;font-weight: 400;margin-left: 1em;color: #FFFFFF;font-size: 12px;padding: 0 10px;" href="#" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+              <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+            </svg>
+            Install Steam
+          </a>
+          <a class="nav-item nav-link link" href="#">login</a>
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle link" href="#" id="LanguageDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">language</a>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" style="background-color: #171a21;border-radius: 0;box-shadow: 0 4px 8px 0 #171a21, 0 6px 20px 0 #171a21" aria-labelledby="LanguageDropdownMenuLink">
+              <li><a class="dropdown-item bg-transparent link" href="#">Persian</a></li>
+              <li><a class="dropdown-item bg-transparent link" href="#">Chinese</a></li>
+              <li><a class="dropdown-item bg-transparent link" href="#">English</a></li>
+            </ul>
+          </div>
+        </span>
+      </section>
+    </div>
+  </nav>

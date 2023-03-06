@@ -1,5 +1,19 @@
-<html>
+<html style="background-color: #171a21; height: 100%;position: relative" (click)="isClose()">
+    <mat-sidenav class="example-container" *ngIf="isOpen" mode="over" opened>
+      <p class="whiteT m-3">Login</p>
+      <hr>
+      <p class="whiteT m-3">Store</p>
+      <hr>
+      <p class="whiteT m-3">Community</p>
+      <hr>
+      <p class="whiteT m-3">Support</p>
+      <hr>
+      <a class="whiteTsmall m-3 nav-link">Change language</a>
+      <a class="whiteTsmall m-3 nav-link">View desktop website</a>
+      <span fxLayout="column" fxLayoutAlign="end">
+      </span>
+    </mat-sidenav>
     <app-header></app-header>
     <app-signin></app-signin>
-    <app-footer></app-footer>
+    <app-footer class="hide-responsive-LT-md"></app-footer>
 </html>

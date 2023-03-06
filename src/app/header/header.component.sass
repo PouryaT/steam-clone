@@ -2,15 +2,35 @@
     width: 50px
     height: 50px
 
-a
+.link
+    color: #abb1b4
+    font-size: 12px
+    font-weight: 400
+    margin-left: 1em
+
+.b-link
     color: #abb1b4
     font-size: 14px
     font-weight: 400
     margin-left: 1em
 
-a:hover
-    color: #FFFFFF
 
-    
-li:hover 
-    color:red
+.link:hover, .b-link:hover
+  color: #FFFFFF
+
+.Header
+  background-color: #171a21
+  height: 104px
+
+@media screen and (max-width: 910px)
+  .hide-responsive-LT-md
+    display: none
+  .Header
+    background-color: #171a21
+    height: 62px
+    position: fixed     
+    width: 100%
+    box-shadow: #171a21 1.95px 1.95px 2.6px
+@media screen and (min-width: 911px)
+  .hide-responsive-GT-md
+    display: none

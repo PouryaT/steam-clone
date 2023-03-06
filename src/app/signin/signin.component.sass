@@ -10,6 +10,7 @@ input
     border-radius: 2px
     color: white
     padding: 0 10px
+    border: 0
 label
     color:  #1861df
     font-weight: 500
@@ -21,29 +22,27 @@ a:hover
 .whiteHead
     color: white
     font-weight: 200
-    font-size: 30px
+    font-size: 35px
     margin-bottom: 35px
 
 .signin
     background-image: url(https://store.cloudflare.steamstatic.com/public/shared/images/joinsteam/new_login_bg_strong_mask.jpg)
-    backdrop-filter: brightness(50%) blur(2px) //problem
     height: 90%
-    max-width: 100% 
-    background-repeat: no-repeat 
+    max-width: 100%
+    background-repeat: no-repeat
     background-size: cover
     background-position: center center
-    backdrop-filter: blur(2px)
 
 .signButt
+    border: none
     background: rgb(0,198,255)
     background: linear-gradient(90deg, rgba(0,198,255,1) 0%, rgba(64,113,255,1) 78%)
-    width: 250px
+    width: 270px
     height: 50px
     border-radius: 5px
     font-weight: 600
     font-size: 18px
     color: white
-
 .input-G
     margin-top: 15px
 
@@ -70,3 +69,36 @@ a:hover
 
 #JoinButt:hover
     border: 1px solid white
+
+.signbox
+  width: 700px
+  background-color: #171a21
+  border-radius: 5px
+  display: grid
+  grid-template-columns: 3fr 2fr
+
+@media screen and (max-width: 910px)
+  .hide-responsive-LT-md
+    display: none
+
+  .signbox
+    width: 276px
+    background-color: transparent
+    border-radius: 5px
+  input
+    width: 276px
+    height: 40px
+    outline: none
+    box-shadow: none
+    background-color: #32353c
+    border-radius: 2px
+    color: white
+    padding: 0 10px
+    border: 0
+  .footer-2
+    width: 100%
+    height: 180px
+
+@media screen and (min-width: 911px)
+  .hide-responsive-GT-md
+    display: none
